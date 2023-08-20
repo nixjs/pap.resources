@@ -1,4 +1,4 @@
-﻿***Bộ điều khiển trung tâm (HC)** là bộ não ghi nhận và điều khiển [**nhà thông minh**](https://lumi.vn/) của Lumi Smart Home. Được ứng dụng công nghệ truyền thông Zigbee, giúp điều khiển toàn bộ ngôi nhà bằng smarthome và giọng nói. Đây là một thiết bị quan trong khi cài đặt nhà thông minh, bởi sản phẩm có khả năng kết nối các thiết bị và xử lý thông tin nhanh chóng.*
+﻿***Bộ điều khiển trung tâm (HC)** là bộ não ghi nhận và điều khiển [**nhà thông minh**](https://www.paptech.vn/) của Lumi Smart Home. Được ứng dụng công nghệ truyền thông Zigbee, giúp điều khiển toàn bộ ngôi nhà bằng smarthome và giọng nói. Đây là một thiết bị quan trong khi cài đặt nhà thông minh, bởi sản phẩm có khả năng kết nối các thiết bị và xử lý thông tin nhanh chóng.*
 ## **1. Cơ chế hoạt động bộ điều khiển trung tâm**
 - Bộ điều khiển trung tâm là đầu mối tiếp nhận, truyền thông tin “công việc” đến công tắc để yêu cầu thiết bị thực hiện nhiệm vụ.
 - Mọi thiết bị trong mạng đều có thể đóng vai trò làm Gateway. Có thể kết nối trực tiếp tới smartphone. Thông qua HC, các trạng thái của thiết bị sẽ được đồng bộ lên máy chủ.
@@ -9,7 +9,6 @@
 
 *Bộ điều khiển trung tâm Lumi*
 
-\>> Xem thêm sản phẩm HC hỗ trợ chiếu sáng thông minh: [***Bộ điều khiển trung tâm (Hỗ trợ Lumi Smart Lighting)***](https://lumi.vn/san-pham/bo-dieu-khien-trung-tam-ho-tro-lumi-smart-lighting.html)
 ## **2. Ứng dụng của bộ điều khiển nhà thông minh Lumi**
 - Đóng vai trò là thiết bị đầu não để điều khiển nhà thông minh. Mang đến nhiều tiện ích, có thể biến mọi ngôi nhà bình thường trở thành nhà thông minh. Với tính năng kết nối công tắc điều khiển các thiết bị điện trong gia đình và điều khiển nhà thông minh, HC có thể lắp đặt cho bất cứ ngôi nhà nào.
 - Nếu không sử dụng bộ điều khiển trung tâm thì các thiết bị công tắc thông minh sẽ chỉ có chức năng như công tắc thường. Bạn không thể điều điều khiển từ xa, hẹn giờ, cũng như cài đặt chế độ tự hoạt động cho hệ thống thiết bị điện trong ngôi nhà của mình trên điện thoại, máy tính bảng …
