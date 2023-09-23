@@ -1,79 +1,106 @@
-﻿# **1. Tổng quát về cửa cổng thông minh**
-Mã sản phẩm: LM-Sx-G
+﻿## **1. Tổng quát**
+- Mã sản phẩm: LM-HC/3.1
 
-- LM-Sx-G là thiết bị công tắc cửa cổng của Lumi hỗ tợ điều khiển động cơ cửa cổng.
-- Thiết kế: mặt kính cường lực chống xước kết hợp viền nhôm nguyên khối.
-- Công nghệ: cảm ứng điện dung, giao thức truyền thông không dây Zigbee.
-- Phương thức điều khiển: bằng tay, điều khiển từ xa trên ứng dụng Lumi Life thông qua bộ điều khiển trung tâm.
+![Bộ điều khiển trung tâm HC](Aspose.Words.5e1ed04d-d255-4d60-972b-9045a93767fe.001.jpeg)
+
+*Bộ điều khiển trung tâm HC*
+
+- Thiết bị LM-HC là bộ điều khiển trung tâm của hệ thống nhà thông minh Lumi.
+- Thiết kế: nhỏ gọn với vỏ nhựa và mặt kính cường lực chống xước.
+- Chức năng:
+  - Cho thiết bị gia nhập mạng zigbee liên kết các thiết bị trong cùng hệ thống với nhau.
+  - Điều khiển các thiết bị bằng ứng dụng Lumi Life.
+  - Thực hiện xử lý các cài đặt tự động: cảnh, rule, hẹn giờ thiết bị, nhóm thiết bị.
 ## **2. Thông số kỹ thuật**
 
-<table><tr><th>Điện áp hoạt động</th><th>100 – 240V AC ~ 50/60Hz</th></tr>
-<tr><td>Nhiệt độ hoạt động</td><td>0℃ – 50℃</td></tr>
-<tr><td>Truyền thông</td><td>Zigbee</td></tr>
-<tr><td>Công suất phát Zigbee</td><td>10 dbm</td></tr>
-<tr><td>Công suất tiêu thụ không tải</td><td>< 0.5W</td></tr>
-<tr><td rowspan="2">Kích thước (D x R x C)</td><td>Hình chữ nhật: 121.5 x 80 x 31.5 mm</td></tr>
-<tr><td>Hình vuông: 95 x 95 x 31.5 mm</td></tr>
-</table>
+|Điện áp hoạt động|100 – 240V AC ~ 50/60Hz|
+| :- | :- |
+|Nhiệt độ hoạt động|0℃ – 50℃|
+|Truyền thông|Zigbee|
+|Công suất phát Zigbee|10 dbm|
+|Kích thước (D x R x C)|95\.6 x 48.9 x 46 mm|
+|Khối lượng|66\.5 gram|
+
+![Kích thước bộ điều khiển trung tâm](Aspose.Words.5e1ed04d-d255-4d60-972b-9045a93767fe.002.jpeg)
+
+*Kích thước bộ điều khiển trung tâm*
 ## **3. Lắp đặt thiết bị**
-Bước 1: Đấu nối dây cho thiết bị.
-Sơ đồ đấu nối dây:
+### **3.1. Đèn chỉ thị của thiết bị**
+Quy ước: Power (Led 1), Internet (Led 2), Service (Led 3), Zigbee (Led 4), Z-wave (Led 5).
 
-Chân L: đấu dây lửa của nguồn điện.
-Chân N: đấu dây trung tính của nguồn điện.
-Chân C: đấu dây tín hiệu chung (Com) của động cơ cửa cổng.
-Chân 1,2: đấu dây điều khiển động cơ.
+<table><tr><th rowspan="3">Thiết bị được cấp nguồn</th><th>Khi cấp nguồn Led 1 sáng và luôn sáng trong quá trình hoạt động, led 2, 3, 4, 5 nháy 3 lần.</th></tr>
+<tr><td>Quá trình khởi động Led 1 sáng</td></tr>
+<tr><td>Khởi động thành công 5 led sáng</td></tr>
+<tr><td rowspan="2">Thiết bị kết nối internet</td><td>Không kết nối Internet và server: Led 1, 2, 4, 5 sáng, led 3 nháy liên tục.</td></tr>
+<tr><td>Kết nối thành công: 5 led đều sáng.</td></tr>
+<tr><td>Quá trình hoạt động</td><td>Khi gia nhập mạng Zigbee: Led 4 nháy liên tục. Các led còn lại đều sáng.</td></tr>
+</table>
+### **3.2. Cấp nguồn thiết bị**
+- Bộ điều khiển trung tâm HC của Lumi được thiết kế có chân cắm điện gắn liền. Để cấp nguồn cho thiết bị, người dùng chỉ cần thao tác cắm thiết bị vào ổ điện.
+- Sau khi được cấp nguồn, led 1 sáng và luôn sáng trong quá trình hoạt động, led 2, led 3, led 4, led 5 nháy 3 lần liên tiếp. Khi khởi động thành công,5 led đều sáng, người dùng tiến hành cấu hình bộ điều khiển trung tâm.
+- Xem chi tiết tại [***Hướng dẫn sử dụng](https://support.lumi.vn/vi/bo-dieu-khien-trung-tam/huongdansudung/Bo-dieu-khien-trung-tamv1.5/normal)***.***
+## **4. Cấu hình thiết bị**
+### **4.1. Cập nhật firmware**
+Trước khi thực hiện cài đặt hệ thống thiết bị thông minh trong nhà, người dùng cần kiểm tra phiên bản firmware của HC và cập nhật firmware cho HC nếu đang ở phiên bản thấp hơn so với hiện tại.
+
+Bước 1:
+
+- Sau khi cấp nguồn mặc định HC sẽ phát ra wifi HCxxxx (xxxx – là 4 số cuối của MAC HC), với mật khẩu là ABC123456. Người dùng kết nối điện thoại hoặc máy tính với wifi của HC để thực hiện cấu hình.
+- Trên trình duyệt web, nhập địa chỉ mặc định 10.10.10.254 để vào phần cấu hình cho bộ điều khiển trung tâm. Mật khẩu mặc định của trang web là ABC123.
+
 Bước 2:
-Lắp công tắc vào đế âm.
-Tháo kính công tắc: sử dụng tuốc nơ vít đặt vào rãnh nhỏ trên viền công tắc và đẩy nhẹ tháo rời mặt kính.Tháo mặt kính công tắc
 
-Lắp công tắc vào đế âm và lắp lại mặt kính:Lắp công tắc vào đế âm tắc
+Đăng nhập thành công, người dùng chọn tab Administration, tại phần Software information chọn UPGRADE FIRMWARE, sau đó chọn Chose the file để chọn file firmware của Lumi cung cấp đã lưu trong máy. Cuối cùng chọn UPGRADE & RESTART để thực hiện quá trình cập nhật firmware cho HC.
 
-Lưu ý:
+![Cập nhật firmware](Aspose.Words.5e1ed04d-d255-4d60-972b-9045a93767fe.003.jpeg)
 
-- Xếp gọn dây điện trong đế âm để lắp vừa công tắc và tránh bị vít ốc vào dây điện.
-- không vít quá chặt sẽ làm công tắc bị cong, vênh mạch cảm ứng của công tắc không tiếp xúc được với mặt kính dẫn đến không bật/tắt được công tắc bằng tay.
-## **4. Sử dụng thiết bị**
-### **4.1. Điều khiển mở/dừng/đóng cửa cổng**
-- Công tắc cửa cổng Lumi có 2 loại: công tắc cửa cổng 1 nút và công tắc cửa cổng 2 nút.
-- Công tắc cửa cổng hoạt động ở chế độ nhấn nhả (công tắc bật và trở về trạng thái bật trong khoảng 0.5s).
-- Để điều khiển mở/dừng/đóng, người dùng chạm giữ trong khoảng 0.5s vào nút cảm ứng trên công tắc rồi thả tay.
+*Cập nhật firmware*
 
-Sử dụng công tắc cổng
+**Lưu ý:** Thời gian quá trình upgrade firmware khoảng 3 phút, trong quá trình này người dùng tuyệt đối không được làm mất nguồn HC và đảm bảo nguồn điện ổn định.
+### **4.2. Kết nối internet**
+- Thiết bị LM-HC có 2 mode kết nối internet: AP mode (chế độ kết nối dây LAN). Station mode (chế độ kết nối wifi).
+- Chế độ AP mode:
+  - Mặc định ban đầu HC ở chế độ AP mode, người dùng chỉ cần cấp nguồn và cắm dây LAN kết nối HC với router/modem mạng.
+  - Để kiểm tra HC đã nhận mạng hay chưa, người dùng kết nối wifi HC và truy cập địa chỉ 10.10.10.254 trên trình duyệt vào phần cấu hình HC, mật khẩu web cấu hình là ABC123.
+  - Người dùng chọn tab Network, tại phần WAN sẽ hiển thị các thông số cấu hình internet của HC nếu HC đã nhận mạng từ router/modem mạng. Trường hợp HC không hiển thị thông số gì người dùng cần kiểm tra lại đường truyền internet, dây LAN.
 
-Lưu ý:
-Điều khiển mở/dừng/đóng cho 1 động cơ cửa cổng thao tác trên cùng 1 nút của công tắc cửa cổng.
-### **4.2. Khóa cảm ứng**
-Từ 24/2/2020 thiết bị công tắc cửa cổng có chức năng khóa cảm ứng, người dùng sẽ không thể bật/tắt bằng tay được và chỉ có thể điều khiển bằng app Lumi Life.
+![HC chưa nhận mạng](Aspose.Words.5e1ed04d-d255-4d60-972b-9045a93767fe.004.jpeg)
 
-Khóa cảm ứng công tắc
+*HC chưa nhận mạng*
 
-Nhấn nhanh nút config 10 lần liên tiếp để khóa và mở khóa cảm ứng.
-Khóa cảm ứng – Tất cả led nháy đỏ 5 lần.
-Mở khóa cảm ứng – Tất cả led nháy xanh 5 lần.
-### **4.3. Thay đổi độ sáng led chỉ thị**
-- Led chỉ thị trên công tắc có 2 mức là sáng mạnh hoặc sáng yếu.
-- Công tắc trước 24/2/2020, người dùng nhấn giữ nút config 8s và quan sát led chỉ thị thay đổi độ sáng thả tay ra.
-- Công tắc từ 24/2/2020 trở đi, người dùng nhấn giữ nút config 5s và quan sát led chỉ thị thay đổi độ sáng thả tay ra.
-## **5. Cài đặt điều khiển thiết bị**
-### **5.1. Cho thiết bị gia nhập mạng**
-- Để cài đặt điều khiển công tắc bằng ứng dụng trên điện thoại người dùng cần có bộ điều khiển trung tâm HC (home controller) và đã tạo nhà trên hệ thống.
-- Người dùng đăng nhập vào app Lumi Life => chọn cài đặt => chọn cài đặt thiết bị => chọn HC => Zigbee => cho thiết bị gia nhập mạng.
-- Quan sát đèn chỉ thị trên công tắc nháy hồng 3 lần liên tiếp chu kỳ 1s/1 lần khi gia mạng thành công.
-- Trường hợp công tắc không gia nhập mạng có thể công tắc đã được cấu hình, người dùng thực hiện reset thiết bị để quay về chế độ gia nhập mạng.
-### **5.2. Điều khiển thiết bị trên ứng dụng Lumi Life**
-Sau khi công tắc gia nhập mạng người dùng đặt tên thiết bị và cho vào phòng trong nhà để điều khiển bằng ứng dụng Lumi Life trên điện thoại.Điều khiển công tắc cửa cổng
+Chế độ Station mode:
 
-- Icon sáng thể hiện công tắc đã bật và điều khiển động cơ cửa cổng.
-- Icon thiết bị sẽ tự trở về trạng thái tối trong 0.5s.
-## **6. Reset thiết bị**
-### **6.1. Reset công tắc zigbee 3.0**
-Từ 24/02/2020, reset và cho thiết bị ra khỏi mạng người dùng ấn nút config 5 lần liên tiếp.
-Nếu thiết bị đang trong mạng thì sau khi reset led chỉ thị của thiết bị sẽ nháy hồng 2 lần liên tiếp báo xóa mạng thành công, sau đó nháy hồng thêm 2 lần liên tiếp lần nữa báo khởi động lại và nháy đỏ 3 lần liên tiếp để trở về chế độ tự động tìm mạng.
-### **6.2. Reset công tắc zigbee 1.2**
-Reset công tắc zigbee 1.2
+- Trường hợp hạ tầng không đáp ứng, không thể kéo dây LAN để cấp mạng cho HC, người dùng có thể cấu hình HC kết nối với wifi của router/modem mạng.
+- Đối với HC có phiên bản firmware từ 5.0.28 trở đi người dùng có thể cài đặt HC kết nối wifi bằng app Lumi Life và không cần truy cập vào web cấu hình HC.
+  - Trường hợp 1: HC chưa được thêm vào nhà. Chi tiết xem hướng dẫn cài đặt [thêm HC vào nhà](https://support.lumi.vn/docs/hdsd/ung_dung_lumi_life/cau_hinh_he_thong/them_hc_vao_nha#hc-k%E1%BA%BFt-n%E1%BB%91i-m%E1%BA%A1ng-wifi) khi HC kết nối wifi.
+  - Trường hợp 2: HC đã được cài đặt thêm vào nhà và thay đổi kết nối wifi. Chi tiết xem hướng dẫn [cài đặt HC kết nối wifi](https://support.lumi.vn/docs/hdsd/ung_dung_lumi_life/cau_hinh_he_thong/them_hc_vao_nha#hc-k%E1%BA%BFt-n%E1%BB%91i-wifi).
+- Sau khi cài đặt HC ở chế độ station mode, HC sẽ không phát wifi.
+  Để bật lại chế độ HC phát wifi (AP mode) người dùng thao tác nhấn giữ nút config 1s thả tay ra, HC sẽ khởi động lại và phát wifi.
 
-Công tắc trước 24/02/2020, reset và cho thiết bị ra khỏi mạng người dùng ấn giữ nút cảm ứng trong 5s, khi led chỉ thị nháy hồng thì thả tay.
-Reset thành công, led chỉ thị nháy hồng 3 lần liên tiếp với chu kì 1s/1 lần. Khi đó, thiết bị rời khỏi mạng thành công và nháy đỏ 3 lần liên tiếp quay lại quá trình tự động tìm mạng.
-## **7. Bộ sản phẩm đóng gói**
-Bộ thiết bị công tắc cửa cổng cửa được đóng hộp bao gồm: 1 bộ công tắc cửa cổng, 2 vít, 1 bộ hướng dẫn sử dụng.Bộ sản phẩm đóng gói
+![Bật lại wifi HC](Aspose.Words.5e1ed04d-d255-4d60-972b-9045a93767fe.005.jpeg)
+
+*Bật lại wifi HC*
+### **4.3. Chế độ hoạt động**
+- Bộ điều khiển trung tâm có 2 chế độ hoạt động: Home Controller (HC) và Local Controller (LC).
+- Mặc định ban đầu HC sẽ ở chế độ Home Controller, tức là HC chính trong hệ thống.
+- Khi nhu cầu muốn mở rộng số lượng thiết bị trong 1 hệ thống, người dùng cần sử dụng nhiều hơn 1 bộ HC. Khi đó trong hệ thống sẽ có 1 bộ HC chính và các bộ HC còn lại là HC phụ hoạt động ở chế độ LC.
+- Để chuyển chế độ hoạt động cho bộ điều khiển trung tâm, người dùng kết nối wifi HC và truy cập địa chỉ 10.10.10.254 trên trình duyệt vào phần cấu hình HC, mật khẩu web cấu hình là ABC123.
+- Tab Administration, tại phần Running mode, click vào CONFIGURE và chọn chế độ Home Controller hoặc Local Controller để cấu hình thiết bị thành HC hoặc LC tùy vào nhu cầu sử dụng. Sau đó chọn CONFIGURE & RESTART, HC sẽ khởi động lại và lưu chế độ cài đặt.
+## **5. Reset thiết bị**
+Người dùng có thể reset bộ điều khiển trung tâm HC về mặc định theo 2 cách.
+#### ***Thao tác trên thiết bị:***
+![Reset HC trên thiết bị](Aspose.Words.5e1ed04d-d255-4d60-972b-9045a93767fe.006.jpeg)
+
+*Reset HC trên thiết bị*
+
+- Nhấn giữ nút config nằm cạnh khe thẻ nhớ trên HC trong khoảng 5s, quan sát led chỉ thị sáng đến led 4 thì thả tay ra.
+- Sau đó, led 2, 3, 4, 5 nháy 3 lần, HC khởi động lại. Sau khi khởi động lại thành công, HC sáng 5 led và phát wifi.
+#### ***Thao tác trên web cấu hình***
+Người dùng kết nối wifi HC, truy cập địa chỉ 10.10.10.254 trên trình duyệt vào phần cấu hình HC, mật khẩu web cấu hình là ABC123, chọn tab Administration, tại phần Factory reset chọn RESET.
+
+![Reset HC](Aspose.Words.5e1ed04d-d255-4d60-972b-9045a93767fe.007.jpeg)
+
+*Reset HC*
+## **6. Bộ sản phẩm đóng gói**
+Hộp đóng gói sản phẩm bao gồm: 1 bộ HC, 1 bộ hướng dẫn sử dụng, 1 dây cáp mạng dài 1m.
+## **7. Video hướng dẫn cài đặt nhà thông minh với bộ xử lý trung tâm**
