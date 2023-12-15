@@ -1,0 +1,1 @@
+﻿Giải pháp rèm cửa tự động cho phép cài đặt rèm tự động mở đón bình minh mỗi buổi sáng và đóng lại khi đêm về thông qua Smartphone hoặc giọng nói. Người dùng cũng có thể điều khiển rèm thông minh thông qua smartphone một cách dễ dàng.

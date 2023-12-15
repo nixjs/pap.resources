@@ -1,0 +1,1 @@
+﻿Ngăn cản trộm ngay từ những bước xâm nhập đầu tiên, [***nhà thông minh Lumi***](https://lumi.vn/) giúp chủ nhà xây dựng một kịch bản chống trộm đa lớp, kích hoạt các thiết bị điện thông minh trong nhà cùng tham gia chống trộm và trở thành thiết bị chống trộm nhà thông minh.

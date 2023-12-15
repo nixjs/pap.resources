@@ -1,0 +1,1 @@
+﻿Giải pháp chiếu sáng thông minh của [**Lumi**](https://lumi.vn/) cho phép điều khiển, bật/ tắt, hẹn giờ, cài đặt ngữ cảnh với hệ thống đèn chiếu sáng trong nhà thông minh qua Smartphone hoặc giọng nói. Khi thiết kế đèn thông minh, hệ thống đèn thông minh không yêu cầu lắp đặt bóng đèn thông minh, giúp bạn tiết kiệm chi phí lắp đặt và bảo dưỡng.
